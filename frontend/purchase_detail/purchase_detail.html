@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form validation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../assets/common_style.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="header">
+      <h2>Add Purchase Details</h2>
+    </div>
+
+    <form id="form" class="form">
+
+      <div class="form-control">
+        <label for="customer_name">Product Name</label>
+        <input type="text" placeholder="" id="customer_name" />
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error message</small>
+      </div>
+
+      <div class="form-control">
+        <label for="customer_email">Quantity</label>
+        <input type="number" id="customer_email" />
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error message</small>
+      </div>
+
+      <div class="form-control">
+        <label for="Customer_contact">Price</label>
+        <input type="number"  id="customer_contact" />
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error message</small>
+      </div>
+
+      <div class="form-control">
+        <label for="Customer_contact">MRP</label>
+        <input type="number"  id="customer_contact" />
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error message</small>
+      </div>
+      
+      
+      <div class="form-control">
+        <label for="customer_city">Select Customer</label>
+        <input type="text" placeholder="Noida" id="customer_city"/>
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error message</small>
+      </div>
+
+      <button>Submit</button>
+    </form>
+  </div>
+
+
+  <script type="module" src="script.js"></script>
+  
+
+</body>
+
+</html>

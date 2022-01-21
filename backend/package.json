@@ -1,0 +1,18 @@
+{
+  "name": "my_server",
+  "version": "1.0.0",
+  "description": "This is simple web server for performing CRUD on customers data",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "author": "Brajesh",
+  "license": "MIT",
+  "dependencies": {
+    "ajv": "^8.9.0",
+    "config": "^3.3.7",
+    "express": "^4.17.2"
+  }
+}

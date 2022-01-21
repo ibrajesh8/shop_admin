@@ -1,0 +1,86 @@
+{
+    "customer_schema": {
+        "type": "object",
+        "properties": {
+            "name": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 100
+            },
+            "email": {
+                "type": "string"
+            },
+            "phone": {
+                "type": "string",
+                "minLength": 10
+            }
+        },
+        "required": [
+            "name",
+            "email",
+            "phone"
+        ]
+    },
+    "purchase_schema": {
+        "type": "object",
+        "properties": {
+            "product": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 100
+            },
+            "price": {
+                "type": "number",
+                "minimum": 0,
+                "exclusiveMinimum": true
+            },
+            "quantity": {
+                "type": "integer",
+                "minimum": 0
+            }
+        },
+        "required": [
+            "product",
+            "price",
+            "quantity"
+        ]
+    },
+    "shipping_schema": {
+        "type": "object",
+        "properties": {
+            "name": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 100
+            },
+            "address": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 100
+            }
+        },
+        "required": [
+            "name",
+            "address"
+        ]
+    },
+    "address_schema": {
+        "type": "object",
+        "properties": {
+            "name": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 100
+            },
+            "address": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 100
+            }
+        },
+        "required": [
+            "name",
+            "address"
+        ]
+    }
+}
